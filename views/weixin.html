@@ -1,0 +1,15 @@
+<div class="chat-page">
+	<ul class="chat-lists" id="weixin" ng-controller="weixinCtrl">
+		<li class="chat-item" ng-class="{'show-delete':show}" ng-swipe-left="show=true" ng-swipe-right="show=false" ng-init="show=false" ng-repeat="v in chatList">
+		   <a class="xx" href="#/weixin/{{$index}}">
+		  	<a  class="pic"><img ng-src="{{v.image}}" alt=""></a>
+			<div class="chat-info">
+				<span class="chat-user">{{v.name}}</span>
+				<span class="chat-time">{{v.time}}</span>
+				<span class="chat-desc">{{v.message}}</span>
+			</div>
+		 </a> 		
+		 <div ng-click="deleteList($index)" class="delete">delete</div>
+		</li>
+	</ul>
+</div>

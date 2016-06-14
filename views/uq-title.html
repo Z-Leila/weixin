@@ -1,0 +1,35 @@
+ <header class="header">
+        <div class="header-left">
+          {{title}}
+        </div>
+        <div class="header-right">
+          <span class="iconfont icon-fangdajing"></span>
+          <span ng-hide="title!='微信'" ng-click="show=!show" ng-init="show=false" class="iconfont icon-jiahao"></span>
+         </div>  
+          <div class="drop" ng-show="show" ng-class="ng-hide">
+            <span></span>
+            <ul>
+              <li class="hang">
+                <img class="tubiao" src="./image/hide/xia1.png">
+                <a href="" class="word">发起群聊</a>
+              </li>
+              <li class="hang">
+                <img class="tubiao" src="./image/hide/xia2.png">
+                <a href="" class="word">添加朋友</a>
+              </li>
+              <li class="hang">
+                <img class="tubiao" src="./image/hide/xia3.png">
+                <a href="" class="word">扫一扫</a>
+              </li>
+              <li class="hang">
+                <img class="tubiao" src="./image/hide/xia4.png">
+                <a href="" class="word">收付款</a>
+              </li>
+              <li class="hang">
+                <img class="tubiao" src="./image/hide/xia5.png">
+                <a href="" class="word">帮助与反馈</a>
+              </li>
+            </ul>
+          </div>
+
+      </header>

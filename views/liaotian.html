@@ -1,0 +1,8 @@
+<ul class="collection" id="liaotian">
+	<li class="collection-item avatar valign-wrapper" ng-repeat="v in ll" ng-class="{me:v.isMe}">
+		<img ng-if="!v.isMe" src="{{duifang}}" alt="" class="circle duifang">
+		<img ng-if="v.isMe" src="image/header/c.jpg" alt="" class="circle">
+		<p>{{v.xinxi}}</p>
+		<a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+	</li>
+</ul>

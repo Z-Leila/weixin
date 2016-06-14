@@ -1,0 +1,35 @@
+<header class="chat-header">
+    <div class="header-left">
+       <span class="iconfont icon-jiantou"></span>
+       <span class="user-name">详细资料</span>
+    </div>
+    <div class="header-right">
+      <span class="iconfont icon-fangdajing"></span>
+    </div>
+  </header>
+
+    <div class="my-info">
+      <div class="my-img"><img ng-src={{people.pic}} alt=""></div>
+      <div class="my-desc">
+        <span class="my-name">{{people.name}}</span>
+        <span class="my-num">{{people.weixinhao}}</span>
+      </div>
+    </div>
+    <div class="beizhu-wrapper">
+      <h3>设置备注和标签</h3>
+    </div>
+    <div class="user-info-wrapper">
+      <div class="user-info">
+        <ul class="user-info-lists">
+          <li class="user-area">地区 {{people.area}}</li>
+          <li class="user-camera">个人相册</li>
+          <li class="user-more">更多</li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn-wrapper">
+      <div class="btn">
+        <button class="news">发消息</button>
+        <button class="video-chat">视频聊天</button>
+      </div>
+    </div>

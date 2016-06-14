@@ -1,0 +1,31 @@
+<div class="chat-page">
+	<ul class="contact-lists" id="lianxiren">
+		<li class="chat-item">
+			<div class="pic"><img src="./image/contact/1.png" alt=""></div>
+			<div class="xuanze">新的朋友</div>
+		</li>
+		<li class="chat-item">
+			<div class="pic"><img src="./image/contact/2.png" alt=""></div>
+			<div class="xuanze">群聊</div>
+		</li>
+		<li class="chat-item">
+			<div class="pic"><img src="./image/contact/3.png" alt=""></div>
+			<div class="xuanze">标签</div>
+		</li>
+		<li class="chat-item">
+			<div class="pic"><img src="./image/contact/4.png" alt=""></div>
+			<div class="xuanze">公众号</div>
+		</li>
+
+		<div class="group" ng-repeat='v in lianxiren'>
+			<li class="zimu chat-item" data-key="{{v.key}}"><span>{{v.key}}</span></li>
+			<a class="zz" href="#/lianxiren/{{$index}}">
+				<li class="chat-item" ng-repeat="x in v.people">
+				   <div class="pic"><img src="{{x.pic}}"></div>
+				   <div class="xuanze">{{x.name}}</div>
+			   </li>
+			</a>		    
+		</div>	
+		<uq-list></uq-list>
+	</ul>
+</div>

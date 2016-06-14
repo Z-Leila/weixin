@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wechat">
+<head>
+  <meta charset="UTF-8">
+  <title>微信</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.css">
+  <link rel="stylesheet" href="bower_components/Swiper/dist/css/swiper.css"/>
+  <link rel="stylesheet" href="iconfont/iconfont.css">
+  <link rel="stylesheet" href="iconfont1/iconfont.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- <script src="bower_components/Swiper/dist/js/swiper.js"></script> -->
+  <script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+  <script src="./js/angular.js" charset="utf-8"></script>
+  <script src="./js/angular-animate.js" charset="utf-8"></script>
+  <script src="./js/angular-route.js" charset="utf-8"></script>
+ <script src="http://cdn.bootcss.com/angular-touch/1.5.6/angular-touch.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body ng-controller="indexCtrl">
+  <div class="container">
+    <div class="container-inner">
+
+     <uq-title></uq-title>
+
+     
+
+        <div class="content">
+          
+        <ng-view id="view"></ng-view>
+
+          <!-- 第一屏 微信 -->
+            
+          <!-- 第二屏 通讯录 -->             
+
+          <!-- 第三屏 发现 -->
+             
+          <!-- 第四屏 我 -->
+            
+          <!-- 朋友圈 -->  
+        </div>
+  
+
+
+
+      <uq-tab-bar></uq-tab-bar>
+
+      
+    </div>
+  </div>
+
+  
+</body>
+</html>
